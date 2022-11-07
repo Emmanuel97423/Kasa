@@ -1,8 +1,10 @@
-export default function Home() {
+/* eslint-disable react/no-unescaped-entities */
+import React from 'react';
 
+export default function Home() {
     return (
         <div>
             <h1>Page d'accueil</h1>
         </div>
-    )
+    );
 }
