@@ -1,0 +1,35 @@
+:root {
+    padding: 20px;
+
+    /* Start variables */
+    --pf-global--primary-color--100: #FF6060;
+    --pf-global--Color--light-100: #fff;
+    --pf-global--link--Color: #FF6060;
+    --pf-global--FontSize--xs:12px;
+    --pf-global--FontWeight--overpass--semi-bold:500;
+    /* End variables */
+
+}
+
+@import-normalize;
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+
+
+img {
+    border-style: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
