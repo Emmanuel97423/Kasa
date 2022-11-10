@@ -1,0 +1,24 @@
+.banner{
+    /* position: relative; */
+    display:flex;
+    background-color:#000;
+    width: 100%;
+    height: 111px;;
+    border-radius: 10px;
+    margin-top:var(--cust-global--block--margin-top)
+}
+.banner h1 {
+    position: absolute;
+    font-size: var(--pf-global--FontSize--4xl);
+    font-weight: var(--pf-global--FontWeight--normal);
+    color:var(--pf-global--Color--light-100);
+    padding: 16px;
+}
+.banner img{
+    
+    width:100%;
+    height:auto;
+    opacity: 0.5;
+    border-radius: 10px;
+    object-fit: fill;
+}
