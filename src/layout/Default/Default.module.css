@@ -1,5 +1,4 @@
 :root {
-    padding: 20px;
 
     /* Start variables */
     --pf-global--primary-color--100: #FF6060;
@@ -10,8 +9,9 @@
     --pf-global--FontSize--4xl:24px;
     --pf-global--FontWeight--normal:500;
     --pf-global--BorderRadius--sm:10px;
-    --cust-global--block--margin-top:22px;
+    --cust-global--block--margin-top:35px;
     --pf-chart-global--layout--Padding:15px;
+    --pf-chart-global--div--Margin:5px;
 
     /* End variables */
 
@@ -25,6 +25,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 img {
@@ -41,4 +42,14 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
+}
+.app{
+    padding: 10px;
+}
+
+@media only screen and (min-width : 768px) {
+.app {
+        margin: 0 auto;
+        max-width: 1240px;
+    }
 }

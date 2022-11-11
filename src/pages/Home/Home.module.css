@@ -1,4 +1,20 @@
 .content{
     display: flex;
     flex-direction: column;
+    justify-content:space-between;
+    margin-top: 20px;
+}
+ 
+/* Responsive  */
+@media only screen and (min-width : 768px)  {
+        .content {
+                flex-direction:row;
+                flex-wrap: wrap;
+                padding: 35px;
+    margin-top:var(--cust-global--block--margin-top);
+                }
+        .content div {
+                    flex: 1 0 25%;
+                    /* margin: 5px; */
+                        }          
 }

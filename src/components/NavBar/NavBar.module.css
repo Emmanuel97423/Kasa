@@ -1,6 +1,7 @@
 .navbar{
     display:flex;
 justify-content:space-between;
+margin:var(--pf-chart-global--div--Margin);
 }
 .navbar ul {
     display: flex;
