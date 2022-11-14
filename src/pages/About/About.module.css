@@ -1,0 +1,15 @@
+.collapseSection {
+    min-height: 70vh;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.banner {
+    margin: 20px 0 0 0;
+    height: 225px;
+}
+.banner img {
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+border-radius: 25px;    
+}

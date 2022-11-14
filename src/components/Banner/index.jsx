@@ -1,12 +1,30 @@
-import React from 'react';
-import styles from './Banner.module.css';
-import bannerImg from '../../assets/img/banner_01.jpg';
+/* eslint-disable react/no-typos */
 
-export default function Banner() {
+import React from 'react';
+import PropTypes from 'prop-types';
+import styles from './Banner.module.css';
+
+export default function Banner({ title, image }) {
       return (
-            <div className={styles.banner}>
-                  <h1>Chez vous, partout et ailleurs</h1>
-                  <img src={bannerImg} alt="banner" />
+            <div
+                  className={styles.banner}
+                  // style={{
+                  //       height: `${height}`,
+                  // }}
+            >
+                  {title ? <h1>{title}</h1> : null}
+                  <img
+                        src={image}
+                        alt="banner"
+                        // style={{
+                        //       height: `${height}`,
+                        // }}
+                  />
             </div>
       );
 }
+
+Banner.PropTypes = {
+      title: PropTypes.string,
+      image: PropTypes.string,
+};

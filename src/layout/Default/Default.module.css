@@ -9,9 +9,12 @@
     --pf-global--FontSize--4xl:24px;
     --pf-global--FontWeight--normal:500;
     --pf-global--BorderRadius--sm:10px;
+    --pf-global--BorderRadius--light:5px;
     --cust-global--block--margin-top:35px;
     --pf-chart-global--layout--Padding:15px;
     --pf-chart-global--div--Margin:5px;
+
+    --pf-global--FontSize-h3:13px;
 
     /* End variables */
 
@@ -42,6 +45,10 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
+}
+h3{
+    font-size:var(--pf-global--FontSize-h3);
+    font-weight:var(--pf-global--FontWeight--overpass--semi-bold);
 }
 .app{
     padding: 10px;

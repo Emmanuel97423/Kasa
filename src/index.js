@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Property from './pages/Property';
 import About from './pages/About';
 import DefaultLayout from './layout/Default';
-import ErrorPage from './pages/error-page';
+import ErrorPage from './pages/Error';
 // import reportWebVitals from './reportWebVitals';
 
 // const router = createBrowserRouter(
