@@ -1,0 +1,29 @@
+/* Error page */
+.errorContent {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    min-height: 85vh;
+    color: var(--pf-global--primary-color--100);
+    text-align: center;
+    padding: 30px ;
+}
+
+.errorContent h1 {
+font-size:96px;
+font-weight:700;
+    color: var(--pf-global--primary-color--100);
+}
+.errorContent p {
+font-size: 18px;
+}
+.errorContent a {
+    margin:135px 0 0 0;
+    font-size: 14px;
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+.errorContent a:first-letter {
+    text-transform: uppercase;
+}
