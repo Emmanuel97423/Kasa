@@ -1,10 +1,13 @@
+/* eslint-disable react/require-default-props */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import styles from './Card.module.css';
+import styles from './styles.module.css';
 
-export default function Card({ title, cover }) {
+export default function Card({ title, cover, id }) {
       return (
-            <div
+            <Link
+                  to={`/property/${id}`}
                   className={styles.card}
                   style={{
                         backgroundImage: `url(${cover})`,
@@ -13,12 +16,11 @@ export default function Card({ title, cover }) {
                   <div className={styles.cardContent}>
                         <p className={styles.title}>{title}</p>
                   </div>
-            </div>
+            </Link>
       );
 }
 Card.propTypes = {
-      // eslint-disable-next-line react/require-default-props
       title: PropTypes.string,
-      // eslint-disable-next-line react/require-default-props
       cover: PropTypes.string,
+      id: PropTypes.string,
 };

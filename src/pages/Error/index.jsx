@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from '../../components/NavBar';
-import layout from '../../layout/Default/Default.module.css';
-import styles from './Error.module.css';
+import layout from '../../layout/Default/styles.module.css';
+import styles from './styles.module.css';
 
 export default function ErrorPage() {
-      // const error = useRouteError(ErrorPage);
       return (
             <section className={layout.app}>
                   <header className={layout.header}>

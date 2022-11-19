@@ -2,7 +2,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Banner.module.css';
+import styles from './styles.module.css';
 
 export default function Banner({ title, image }) {
       return (

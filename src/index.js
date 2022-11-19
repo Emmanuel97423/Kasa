@@ -5,8 +5,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home';
 import Property from './pages/Property';
 import About from './pages/About';
-import DefaultLayout from './layout/Default';
+// import DefaultLayout from './layout/Default';
 import ErrorPage from './pages/Error';
+import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
 // const router = createBrowserRouter(
@@ -18,7 +19,7 @@ import ErrorPage from './pages/Error';
 const router = createBrowserRouter([
       {
             path: '/',
-            element: <DefaultLayout />,
+            element: <App />,
             errorElement: <ErrorPage />,
             children: [
                   {
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
                         element: <Home />,
                   },
                   {
-                        path: '/property/1',
+                        path: '/property/:id',
                         element: <Property />,
                   },
                   {

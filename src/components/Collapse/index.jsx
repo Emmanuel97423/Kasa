@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { SlArrowUp, SlArrowDown } from 'react-icons/sl';
-import styles from './Collapse.module.css';
+import styles from './styles.module.css';
 
 export default function Collapse({ title, content }) {
       const [collapseActive, setCollapseActive] = useState(false);

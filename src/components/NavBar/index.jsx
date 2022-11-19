@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../kasa-logo.svg';
-import styles from './NavBar.module.css';
+import styles from './styles.module.css';
 
 export default function NavBar() {
       const menu = [

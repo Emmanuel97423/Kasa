@@ -1,6 +1,6 @@
 import React from 'react';
 import Collapse from '../../components/Collapse';
-import styles from './About.module.css';
+import styles from './styles.module.css';
 // import Banner from '../../components/Banner';
 import bannerImg from '../../assets/img/banner_about_mobile.png';
 
