@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 import { SlArrowUp, SlArrowDown } from 'react-icons/sl';
 import styles from './styles.module.css';
 
-export default function Collapse({ title, content, list }) {
+export default function Collapse({ title, content }) {
+      console.log('content:', content);
       const [collapseActive, setCollapseActive] = useState(false);
 
       return (
@@ -37,26 +38,16 @@ export default function Collapse({ title, content, list }) {
                   </div>
                   {collapseActive ? (
                         <div className={styles.collapseContent}>
-                              <p>{content}</p>
-                              {list
-                                    ? list.map((item) => (
-                                            <p key={item}>{item}</p>
-                                      ))
-                                    : null}
+                              {content.map((item) => (
+                                    <li>{item}</li>
+                              ))}
                         </div>
                   ) : null}
             </div>
       );
 }
 
-Collapse.propTypes = {
+Collapse.PropTypes = {
       title: PropTypes.string,
       content: PropTypes.string,
-      // eslint-disable-next-line react/forbid-prop-types
-      list: PropTypes.array,
-};
-Collapse.defaultProps = {
-      title: 'NaN',
-      content: '',
-      list: [],
 };

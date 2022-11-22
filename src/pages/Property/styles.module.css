@@ -1,0 +1,9 @@
+
+.propertyCover {
+    width: 100%;
+    border-radius: 10px;
+object-fit: cover;
+}
+.propertyTitle{
+    color: var(--pf-global--primary-color--100);
+}

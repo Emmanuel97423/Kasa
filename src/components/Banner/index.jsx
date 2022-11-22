@@ -16,6 +16,7 @@ export default function Banner({ title, image }) {
                   <img
                         src={image}
                         alt="banner"
+                        loading="eager"
                         // style={{
                         //       height: `${height}`,
                         // }}
@@ -24,7 +25,11 @@ export default function Banner({ title, image }) {
       );
 }
 
-Banner.PropTypes = {
+Banner.propTypes = {
       title: PropTypes.string,
       image: PropTypes.string,
+};
+Banner.defaultProps = {
+      title: '',
+      image: '',
 };
