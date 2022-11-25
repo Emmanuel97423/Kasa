@@ -1,0 +1,30 @@
+.carousel  {
+    /* height: 200px; */
+    max-height: 225px;
+display:flex;
+/* overflow:hidden; */
+position: relative;
+margin: 15px 0;
+}
+.carousel img {
+    width: 100%;
+    max-height: 225px;
+    object-fit:cover;
+    border-radius:10px;
+}
+.carouselNavPrev {
+font-size: 24px;
+    /* color: var(--pf-global--Color--light-100); */
+    position:absolute;
+    top:45%
+}
+.carouselNavNext {
+font-size: 24px;
+        /* color: var(--pf-global--Color--light-100); */
+    position: absolute;
+    top: 45%;
+    right:0;
+}
+.carouselNavPrev svg {
+        /* color: var(--pf-global--Color--light-100); */
+}

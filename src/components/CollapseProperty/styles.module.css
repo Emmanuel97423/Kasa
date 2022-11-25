@@ -1,0 +1,20 @@
+.collapse{
+    margin:20px 0 0 0;
+}
+.collapseTitle {
+    display:flex;
+    justify-content:space-between;
+    background-color:var(--pf-global--primary-color--100);
+    color: var(--pf-global--Color--light-100);
+    padding:5.5px;
+    border-radius: var(--pf-global--BorderRadius--light);
+}
+.collapseContent {
+    color:var(--pf-global--primary-color--100);
+    font-size:var(--pf-global--FontSize--xs);
+    padding: 20px 12px;
+}
+.collapseIcon {
+width:9px;
+height:15px;
+}
