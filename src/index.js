@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home';
-import Property from './pages/Property';
+import House from './pages/House';
 import About from './pages/About';
 // import DefaultLayout from './layout/Default';
 import ErrorPage from './pages/Error';
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
                   },
                   {
                         path: '/property/:id',
-                        element: <Property />,
+                        element: <House />,
                   },
                   {
                         path: '/a-propos',
@@ -39,7 +39,9 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-      <RouterProvider router={router} />
+      <React.StrictMode>
+            <RouterProvider router={router} />
+      </React.StrictMode>
 );
 
 // root.render(
