@@ -47,37 +47,46 @@ export default function House() {
       return (
             <div className={styles.property}>
                   <Carousel pictures={carouselPictures} />
-                  <div className={styles.propertyInfos}>
-                        <p className={styles.propertyTitle}>{title}</p>
-                        <p className={styles.propertyLocation}>{location}</p>
-                        <div className={styles.tags}>
-                              {tags.map((item) => (
-                                    <div className={styles.tagsItem} key={item}>
-                                          <p>{item}</p>
-                                    </div>
-                              ))}
-                        </div>
-                  </div>
-                  <div className={styles.propertyProfile}>
-                        <div className={styles.propertyProfileRating}>
-                              <Rating number={starNumber} />
-                        </div>
-                        <div className={styles.propertyAvatar}>
-                              <p className={styles.propertyAvatarName}>
-                                    {host.name}
+                  <div className={styles.propertyInfoSection}>
+                        <div className={styles.propertyInfos}>
+                              <p className={styles.propertyTitle}>{title}</p>
+                              <p className={styles.propertyLocation}>
+                                    {location}
                               </p>
-                              <img
-                                    src={host.picture}
-                                    alt={`Hôte:${host.name}`}
-                              />
+                              <div className={styles.tags}>
+                                    {tags.map((item) => (
+                                          <div
+                                                className={styles.tagsItem}
+                                                key={item}
+                                          >
+                                                <p>{item}</p>
+                                          </div>
+                                    ))}
+                              </div>
+                        </div>
+                        <div className={styles.propertyProfile}>
+                              <div className={styles.propertyProfileRating}>
+                                    <Rating number={starNumber} />
+                              </div>
+                              <div className={styles.propertyAvatar}>
+                                    <p className={styles.propertyAvatarName}>
+                                          {host.name}
+                                    </p>
+                                    <img
+                                          src={host.picture}
+                                          alt={`Hôte:${host.name}`}
+                                    />
+                              </div>
                         </div>
                   </div>
                   <div className={styles.propertyCollapse}>
                         <Collapse
+                              className={styles.propertyCollapseItem}
                               title="Description"
                               content={collapseDescription}
                         />
                         <Collapse
+                              className={styles.propertyCollapseItem}
                               title="Equipement"
                               list={collapseEquipments}
                         />

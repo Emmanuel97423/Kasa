@@ -53,6 +53,11 @@ h3{
 .app{
     padding: 10px;
 }
+@media only screen and (min-width : 1024px) {
+    .app {
+            padding: 25px 40px;
+        }
+}
 
 
 

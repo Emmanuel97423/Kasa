@@ -10,9 +10,7 @@ import PropTypes from 'prop-types';
 import styles from './styles.module.css';
 
 export default function Carousel({ pictures }) {
-      console.log('pictures length:', pictures.length);
       const [currentIndex, setCurrentIndex] = useState(0);
-      //   console.log('currentIndex:', currentIndex);
       function handlePrev() {
             setCurrentIndex(currentIndex - 1);
             if (currentIndex <= 0) {
