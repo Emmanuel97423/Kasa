@@ -9,18 +9,19 @@ import PropTypes from 'prop-types';
 
 import styles from './styles.module.css';
 
-export default function Carousel({ props }) {
+export default function Carousel({ pictures }) {
+      console.log('pictures length:', pictures.length);
       const [currentIndex, setCurrentIndex] = useState(0);
       //   console.log('currentIndex:', currentIndex);
       function handlePrev() {
             setCurrentIndex(currentIndex - 1);
             if (currentIndex <= 0) {
-                  setCurrentIndex(props.length - 1);
+                  setCurrentIndex(pictures.length - 1);
             }
       }
       function handleNext() {
             setCurrentIndex(currentIndex + 1);
-            if (currentIndex >= props.length - 1) {
+            if (currentIndex >= pictures.length - 1) {
                   setCurrentIndex(0);
             }
       }
@@ -28,21 +29,25 @@ export default function Carousel({ props }) {
       return (
             <div>
                   <div className={styles.carousel}>
-                        <div className={styles.carouselNavPrev}>
-                              <GrPrevious color="white" onClick={handlePrev} />
-                        </div>
-                        <img src={props[currentIndex]} alt="" />
-                        <div className={styles.carouselNavNext}>
-                              <GrNext onClick={handleNext} />
-                        </div>
+                        {pictures.length > 1 ? (
+                              <div className={styles.carouselNavPrev}>
+                                    <GrPrevious onClick={handlePrev} />
+                              </div>
+                        ) : null}
+                        <img src={pictures[currentIndex]} alt="" />
+                        {pictures.length > 1 && (
+                              <div className={styles.carouselNavNext}>
+                                    <GrNext onClick={handleNext} />
+                              </div>
+                        )}
                   </div>
             </div>
       );
 }
 Carousel.propTypes = {
       // eslint-disable-next-line react/forbid-prop-types
-      props: PropTypes.array,
+      pictures: PropTypes.array,
 };
 Carousel.defaultProps = {
-      props: [],
+      pictures: [],
 };
