@@ -6,8 +6,10 @@
     background-size: cover;
     align-items: flex-end;
     margin-top: 15px;
+    background-color: black;
     
 }
+
 .cardContent{
     padding:var(--pf-chart-global--layout--Padding)
 }
