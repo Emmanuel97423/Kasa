@@ -13,27 +13,9 @@ export default function DefaultLayout() {
                         </header>
                         <section id="content" className="app-content">
                               <Outlet />
-
-                              {/* {children} */}
                         </section>
                   </section>
                   <Footer />
             </div>
       );
 }
-
-// export default function DefaultLayout() {
-//       return (
-//             <div>
-//                   <section className={styles.app}>
-//                         <header className={styles.header}>
-//                               <NavBar />
-//                         </header>
-//                         <section id="content" className="app-content">
-//                               <Outlet />
-//                         </section>
-//                   </section>
-//                   <Footer />
-//             </div>
-//       );
-// }

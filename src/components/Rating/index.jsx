@@ -51,9 +51,3 @@ export default function Rating({ number }) {
             </div>
       );
 }
-// Rating.propTypes = {
-//       number: PropTypes.string,
-// };
-// Rating.defaultProps = {
-//       number: '0',
-// };

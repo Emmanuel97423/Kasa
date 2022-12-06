@@ -1,7 +1,4 @@
-/* eslint-disable array-callback-return */
-/* eslint-disable prefer-destructuring */
 /* eslint-disable no-unused-vars */
-/* eslint-disable no-console */
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import propertyData from '../../db/dbJson.json';
@@ -30,10 +27,7 @@ export default function House() {
                   ...propertySelected,
                   property.filter((item) => item.id === params.id)
             );
-            // setProperty(() => {
-            //       const artwork = property.find((a) => a.id === params.id);
-            //       return artwork;
-            // });
+
             setTags(...tags, result[0].tags);
             setHost(...host, result[0].host);
             setTitle(result[0].title);

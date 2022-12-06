@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import Banner from '../../components/Banner';
 import Card from '../../components/Card';

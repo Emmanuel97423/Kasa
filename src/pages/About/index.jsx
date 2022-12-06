@@ -1,7 +1,6 @@
 import React from 'react';
 import Collapse from '../../components/Collapse';
 import styles from './styles.module.css';
-// import Banner from '../../components/Banner';
 import bannerImgMobile from '../../assets/img/banner_about_mobile.png';
 import bannerImg from '../../assets/img/banner_about.png';
 
@@ -36,26 +35,6 @@ export default function About() {
                               alt=""
                               srcSet={`${bannerImgMobile} 300w, ${bannerImg} 728w, ${bannerImg} 1280w`}
                         />
-                        {/* <picture>
-                              <source
-                                    srcSet={bannerImg}
-                                    media="(min-width: 1200px)"
-                              />
-                              <img
-                                    src={bannerImgMobile}
-                                    alt=""
-                                    media="(min-width: 300px)"
-                              />
-                              <img
-                                    src={bannerImg}
-                                    alt=""
-                                    media="(min-width: 1200px)"
-                              />
-                              <source
-                                    srcSet={bannerImgMobile}
-                                    media="(min-width: 300px)"
-                              />
-                        </picture> */}
                   </div>
 
                   <div className={styles.collapseSection}>
