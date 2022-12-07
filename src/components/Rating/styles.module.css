@@ -1,3 +1,11 @@
 .propertyProfileRatingItemActive {
     color: var(--pf-global--primary-color--100)
 }
+
+
+@media only screen and (min-width : 768px) {
+.propertyProfileRating {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
