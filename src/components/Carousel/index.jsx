@@ -11,6 +11,7 @@ import styles from './styles.module.css';
 
 export default function Carousel({ pictures }) {
       const [currentIndex, setCurrentIndex] = useState(0);
+
       function handlePrev() {
             setCurrentIndex(currentIndex - 1);
             if (currentIndex <= 0) {
@@ -29,15 +30,24 @@ export default function Carousel({ pictures }) {
                   <div className={styles.carousel}>
                         {pictures.length > 1 ? (
                               <div className={styles.carouselNavPrev}>
-                                    <GrPrevious onClick={handlePrev} />
+                                    <GrPrevious
+                                          onClick={handlePrev}
+                                          className={styles.GrBtn}
+                                    />
                               </div>
                         ) : null}
                         <img src={pictures[currentIndex]} alt="" />
                         {pictures.length > 1 && (
                               <div className={styles.carouselNavNext}>
-                                    <GrNext onClick={handleNext} />
+                                    <GrNext
+                                          onClick={handleNext}
+                                          className={styles.GrBtn}
+                                    />
                               </div>
                         )}
+                        <div className={styles.picturesCounter}>
+                              {currentIndex + 1}/{pictures.length}
+                        </div>
                   </div>
             </div>
       );

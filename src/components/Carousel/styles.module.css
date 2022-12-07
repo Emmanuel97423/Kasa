@@ -16,7 +16,7 @@ margin: 15px 0;
 font-size: 24px;
     /* color: var(--pf-global--Color--light-100); */
     position:absolute;
-    top:45%
+    top:45%;
 }
 .carouselNavNext {
 font-size: 24px;
@@ -25,11 +25,26 @@ font-size: 24px;
     top: 45%;
     right:0;
 }
-.carouselNavPrev svg {
-        /* color: var(--pf-global--Color--light-100); */
+.GrBtn{
+    font-size:46px;
+}
+.picturesCounter{
+    position: absolute;
+    bottom: 0;
+    right:50%;
+    color:white;
+    /* transform: translateX(50%) */
 }
 @media only screen and (min-width : 1024px) {
 .carousel{
     height:415px;
 }
+
+}
+@media only screen and (max-width : 768px){
+    
+    
+        .GrBtn {
+            font-size: 24px;
+        }
 }
