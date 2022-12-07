@@ -9,10 +9,11 @@ export default function Card({ title, cover, id }) {
             <Link
                   to={`/property/${id}`}
                   className={styles.card}
-                  style={{
-                        backgroundImage: `url(${cover})`,
-                  }}
+                  // style={{
+                  //       backgroundImage: `url(${cover})`,
+                  // }}
             >
+                  <img src={cover} alt={title} />
                   <div className={styles.cardContent}>
                         <p className={styles.title}>{title}</p>
                   </div>

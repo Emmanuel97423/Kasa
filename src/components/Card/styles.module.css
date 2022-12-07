@@ -1,16 +1,32 @@
 .card{ 
     width: 100%;
+    /* position: absolute; */
     display:flex;
     height:255px;
-    border-radius: var(--pf-global--BorderRadius--sm);
     background-size: cover;
     align-items: flex-end;
     margin-top: 15px;
-    background-color: black;
+    border-radius: var(--pf-global--BorderRadius--sm);
+    /* background-color:black; */
+    background: rgb(2, 0, 36);
+        background: linear-gradient(180deg, rgb(0 0 0 / 35%) 0%, rgba(0, 0, 0, 1) 100%)
     
+}
+.card img {
+    width: 100%;
+    height: 255px;
+    object-fit: cover;
+    border-radius: var(--pf-global--BorderRadius--sm);
+    opacity: 0.5;
+}
+.card p{
+    position: absolute;
+    width: 200px;
+    transform: translateY(-25px);
 }
 
 .cardContent{
+    position: absolute;
     padding:var(--pf-chart-global--layout--Padding)
 }
 .title{
