@@ -89,10 +89,10 @@ inline-size: 60px;
     margin:0 0 5vh 0;
 display: flex;
 flex-direction: column;
+justify-content:space-between;
+gap: 20px;
 }
- /* .propertyCollapseItem {
-     flex: 1 1 auto;
- } */
+
 
  .property polyline{
     stroke: #fff;
