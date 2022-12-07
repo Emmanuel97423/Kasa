@@ -21,6 +21,7 @@ const router = createBrowserRouter([
                   {
                         path: '/property/:id',
                         element: <House />,
+                        errorElement: <ErrorPage />,
                   },
                   {
                         path: '/a-propos',

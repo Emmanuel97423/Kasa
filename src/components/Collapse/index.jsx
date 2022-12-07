@@ -53,7 +53,7 @@ Collapse.propTypes = {
       title: PropTypes.string,
       content: PropTypes.string,
       // eslint-disable-next-line react/forbid-prop-types
-      list: PropTypes.array,
+      list: PropTypes.any,
 };
 Collapse.defaultProps = {
       title: 'NaN',

@@ -6,13 +6,7 @@ import styles from './styles.module.css';
 
 export default function Card({ title, cover, id }) {
       return (
-            <Link
-                  to={`/property/${id}`}
-                  className={styles.card}
-                  // style={{
-                  //       backgroundImage: `url(${cover})`,
-                  // }}
-            >
+            <Link to={`/property/${id}`} className={styles.card}>
                   <img src={cover} alt={title} />
                   <div className={styles.cardContent}>
                         <p className={styles.title}>{title}</p>

@@ -6,13 +6,15 @@ import styles from './styles.module.css';
 
 export default function ErrorPage() {
       const error = useRouteError();
+      // eslint-disable-next-line no-console
+      console.log('error:', error);
       return (
-            <section className={layout.app}>
+            <section id="error-page" className={layout.app}>
                   <header className={layout.header}>
                         <NavBar />
                   </header>
                   <section className={styles.errorContent}>
-                        <h1>{error.status}</h1>
+                        <h1>{error ? error.status : '404'}</h1>
                         <i>{error.statusText}.</i>
                         <br />
                         <p>Oups! La page que vous demandez n&#39;existe pas.</p>
